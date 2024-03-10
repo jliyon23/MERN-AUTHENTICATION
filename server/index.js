@@ -17,7 +17,8 @@ app.use(cors())
 // ))
     
 app.use(express.json())
-mongoose.connect("mongodb+srv://jliyon:jliyon23@cluster0.xykfjxn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("    ********your mongodb atlas uri here*******     ") //MONGODB URI HERE
+
 
 app.post("/login", (req, res) => {
     const {email, password} = req.body
